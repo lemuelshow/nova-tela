@@ -80,7 +80,7 @@ servindo a API (`/api/*`) e o front no mesmo dominio (sem CORS, sem URL de API p
 
 | Item          | Valor                       |
 |---------------|-----------------------------|
-| Build Command | `npm run render-build`      |
+| Build Command | `npm install && npm run build` (ou `npm run render-build`) |
 | Start Command | `npm start`                 |
 | Health check  | `/api/health`               |
 | Node          | 22 (`NODE_VERSION`)         |

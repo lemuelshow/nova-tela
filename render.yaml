@@ -1,0 +1,26 @@
+# Blueprint do Render: um unico Web Service que builda o React (frontend/dist)
+# e sobe o Express, que serve a API (/api/*) e o front no mesmo dominio.
+services:
+  - type: web
+    name: modelo-tela
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm run render-build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: ADMIN_USUARIO
+        value: admin
+      - key: ADMIN_SENHA
+        generateValue: true   # senha aleatoria; veja/edite em Environment no painel
+    # No plano free o disco e efemero: db.json (acessos/gateway) zera a cada deploy/restart.
+    # Para persistir, use plano pago e descomente:
+    # disk:
+    #   name: dados
+    #   mountPath: /var/data
+    #   sizeGB: 1
+    # e adicione a env var DATA_DIR=/var/data

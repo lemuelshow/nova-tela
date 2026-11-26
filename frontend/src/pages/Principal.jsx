@@ -33,7 +33,7 @@ function IconeBanner() {
 
 function IconeUsuario() {
   return (
-    <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="12" cy="8.2" r="4" fill="currentColor" />
       <path d="M4.5 20.5c.5-4.2 3.6-6.8 7.5-6.8s7 2.6 7.5 6.8z" fill="currentColor" />
     </svg>

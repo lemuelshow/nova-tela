@@ -5,7 +5,7 @@ import { cpfValido, mascaraCpf } from '../utils/formatos.js';
 
 function IconeDocumento() {
   return (
-    <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
       <rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="none" stroke="currentColor" strokeWidth="1.8" />
       <circle cx="8.5" cy="11" r="2.2" fill="none" stroke="currentColor" strokeWidth="1.7" />
       <path d="M5.2 16.2c.6-1.6 1.9-2.4 3.3-2.4s2.7.8 3.3 2.4" fill="none" stroke="currentColor"
@@ -17,7 +17,7 @@ function IconeDocumento() {
 
 function IconeInfo() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" strokeWidth="1.8" />
       <path d="M12 11v5.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       <circle cx="12" cy="7.6" r="1.2" fill="currentColor" />
@@ -27,7 +27,7 @@ function IconeInfo() {
 
 function IconeUsuarioConfig() {
   return (
-    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="9.5" cy="7.5" r="3.6" fill="none" stroke="currentColor" strokeWidth="1.8" />
       <path d="M2.8 20c.4-3.9 3.2-6.2 6.7-6.2 1.1 0 2.1.2 3 .7" fill="none" stroke="currentColor"
         strokeWidth="1.8" strokeLinecap="round" />
@@ -91,7 +91,7 @@ export default function Login() {
 
       <div className="lg-card-id">
         <span className="lg-card-icone"><IconeDocumento /></span>
-        <h1 className="lg-card-titulo">Identificação por CPF</h1>
+        <h1 className="lg-card-titulo">Número por CPF</h1>
       </div>
 
       <p className="lg-orientacao">
